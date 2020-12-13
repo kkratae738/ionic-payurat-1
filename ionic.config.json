@@ -1,0 +1,7 @@
+{
+  "name": "pory",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
