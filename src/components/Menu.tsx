@@ -41,43 +41,43 @@ interface AppPage {
 const appPages: AppPage[] = [
   {
     title: 'Home',
-    url: '/page/Inbox',
+    url: '/home',
     iosIcon: homeOutline,
     mdIcon: homeSharp
   },
   {
     title: 'Register',
-    url: '/page/Outbox',
+    url: '/register',
     iosIcon: personAddOutline,
     mdIcon: personAddSharp
   },
   {
     title: 'Product',
-    url: '/page/Favorites',
+    url: '/product',
     iosIcon: carSportOutline,
     mdIcon: carSportSharp
   },
   {
     title: 'Mycart',
-    url: '/page/Archived',
+    url: '/mycart',
     iosIcon: cartOutline,
     mdIcon: cartSharp
   },
   {
     title: 'Payment',
-    url: '/page/Trash',
+    url: '/payment',
     iosIcon: cardOutline,
     mdIcon: cardSharp
   },
   {
-    title: 'Contact Us',
-    url: '/page/Spam',
+    title: 'ContactUs',
+    url: '/contactus',
     iosIcon: chatbubblesOutline,
     mdIcon: chatbubblesSharp
   },
   {
     title: 'Login',
-    url: '/page/login',
+    url: '/login',
     iosIcon: logInOutline,
     mdIcon: logInSharp
   }
@@ -92,8 +92,8 @@ const Menu: React.FC = () => {
     <IonMenu contentId="main" type="overlay">
       <IonContent>
         <IonList id="inbox-list">
-          <IonListHeader>Inbox</IonListHeader>
-          <IonNote>hi@ionicframework.com</IonNote>
+          <IonListHeader>Study Group</IonListHeader>
+          <IonNote>payurat@ionic.com</IonNote>
           {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
@@ -107,7 +107,7 @@ const Menu: React.FC = () => {
         </IonList>
 
         <IonList id="labels-list">
-          <IonListHeader>Labels</IonListHeader>
+          <IonListHeader>Brand Cars</IonListHeader>
           {labels.map((label, index) => (
             <IonItem lines="none" key={index}>
               <IonIcon slot="end" icon={ chevronForwardOutline } />
